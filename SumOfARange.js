@@ -11,7 +11,12 @@ function range (start, end){
 
 /*Next, write a sum function that takes an array of numbers and returns the sum of
 these numbers. Run the previous program and see whether it does indeed return 55.*/
-
+function sum (array){
+  var sum = 0
+  for (var i = 0; i < array.length; i++)
+    sum = sum + array.indexOf[i];
+  return sum
+}
 
 /*As a bonus assignment, modify your range function to take an optional third
 argument that indicates the “step” value used to build up the array.
