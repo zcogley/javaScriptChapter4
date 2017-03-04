@@ -14,4 +14,12 @@ function reverseArray(array){
   return newArray
 }
 
-function reverseArrayInPlace
+function reverseArrayInPlace(array){
+  newArray = []
+  var len = array.length
+  for (var i = 0; i < len; i++)
+    newArray.push(array.pop());
+  for (var i = 0; i < len; i++)
+    array.unshift(newArray.pop());
+  return array
+};
