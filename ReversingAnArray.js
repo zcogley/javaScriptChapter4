@@ -22,4 +22,4 @@ function reverseArrayInPlace(array){
   for (var i = 0; i < len; i++)
     array.unshift(newArray.pop());
   return array
-};
+}
