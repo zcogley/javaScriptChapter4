@@ -15,3 +15,11 @@ function arrayToList(array){
    list = {value: array.pop(), rest: list};
   return list
 }
+
+function listToArray(list){
+  var array = []
+  for (var node = list; node; node = node.rest){
+    array.push(node.value);
+  }
+  return array
+}
