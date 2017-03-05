@@ -28,3 +28,12 @@ function prepend(elem, list){
 	list = {value: elem, rest: list}
     return list
 }
+
+function nth(list, num) {
+  if (!list)
+    return undefined;
+  else if (num == 0)
+    return list.value;
+  else
+    return nth(list.rest, num - 1);
+}
