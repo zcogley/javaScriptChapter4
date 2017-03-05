@@ -23,3 +23,8 @@ function listToArray(list){
   }
   return array
 }
+
+function prepend(elem, list){
+	list = {value: elem, rest: list}
+    return list
+}
